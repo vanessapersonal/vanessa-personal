@@ -14,8 +14,8 @@
     --bg-alt: #0A0A0A;
     --ink: #F0F2F4;
     --ink-dim: #A9B2BA;
-    --blue: #4C8DFF;
-    --blue-deep: #6B93C2;
+    --blue: #1F4FA3;
+    --blue-deep: #2E4A6B;
     --olive: #1E5C8A;
     --olive-light: #4E85AC;
     --line: rgba(240,242,244,0.14);
@@ -182,6 +182,12 @@
     color:#000000;
   }
   .plan .btn-ghost:hover{ background:#D6DADE; border-color:#D6DADE; }
+  .plan-footnote{
+    font-size:12.5px;
+    color:#A9B2BA;
+    margin-top:6px;
+    font-style:italic;
+  }
 
   .hero-visual{
     position:relative;
@@ -193,7 +199,7 @@
     width:100%;
     height:100%;
     object-fit:cover;
-    object-position:center 20%;
+    object-position:center top;
     filter:saturate(0.9) contrast(1.05);
     border:1px solid var(--line);
   }
@@ -273,15 +279,15 @@
   }
   .about-gallery img{
     width:100%;
-    height:260px;
+    height:340px;
     object-fit:cover;
-    object-position:top center;
+    object-position:center top;
     border:1px solid var(--line);
     filter:saturate(0.9) contrast(1.05);
   }
   @media (max-width:520px){
     .about-gallery{ grid-template-columns:1fr; }
-    .about-gallery img{ height:220px; }
+    .about-gallery img{ height:280px; }
   }
   .slogan-line{
     font-family:var(--serif-display);
@@ -351,6 +357,7 @@
   }
   .plan .tier:first-child{ border-top:none; padding-top:0; }
   .plan .tier-name{ font-weight:600; font-size:15px; color:#F0F2F4; }
+  .plan .tier-price{ color:#F0F2F4; }
   .plan .tier ul{
     list-style:none;
     color:#A9B2BA;
@@ -564,10 +571,6 @@
         <span class="eyebrow">Consultoria online de treinamento</span>
         <h1>Treino eficiente<br>para a vida real.</h1>
         <p class="hero-sub">Treinos curtos, objetivos e adaptados à sua rotina. Acompanhamento individualizado com quem já foi atleta e entende o corpo em movimento.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="https://wa.me/5521985440036?text=Oi%20Vanessa!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20a%20consultoria." target="_blank" rel="noopener">Falar no WhatsApp</a>
-          <a class="btn btn-ghost" href="#planos">Ver planos</a>
-        </div>
       </div>
       <div class="hero-visual">
         <img src="vanessa-retrato.jpeg" alt="Vanessa Santos sorrindo, personal trainer">
@@ -578,10 +581,6 @@
   <!-- SOBRE -->
   <section id="sobre">
     <div class="section-inner">
-      <div class="section-head">
-        <h2>Quem te acompanha</h2>
-        <p>Dez anos de profissão, experiência de dentro da quadra e da vida real fora dela.</p>
-      </div>
       <div class="about-grid">
         <div>
           <div class="about-fact">
@@ -599,12 +598,12 @@
         </div>
         <div class="about-body">
           <p>Me chamo Vanessa Santos. Vivo com o propósito de transformar vidas através do exercício físico, usando o treino como ferramenta para saúde física, mental, qualidade de vida e longevidade.</p>
-          <p>Acredito em um treinamento que respeita o corpo e a rotina de cada pessoa — potencializando resultados sem exigir uma vida perfeita que ninguém tem. É treino pensado pra caber no seu dia, e não o contrário.</p>
+          <p>Acredito em um treinamento que respeita o corpo e a rotina de cada pessoa, potencializando resultados sem exigir uma vida perfeita. É treino pensado pra caber no seu dia, e não o contrário.</p>
           <div class="slogan-line">"Constância é o que transforma."</div>
           <p>Se você tem uma rotina cheia e precisa de treinos curtos, objetivos e com acompanhamento de verdade, é exatamente aí que entro.</p>
           <div class="about-gallery">
-            <img src="vanessa-agachamento.jpeg" alt="Vanessa Santos treinando agachamento com barra">
-            <img src="vanessa-forca.png" alt="Vanessa Santos mostrando força e definição física">
+            <img src="vanessa-frente.png" alt="Vanessa Santos sorrindo, mostrando força e definição física">
+            <img src="vanessa-agachamento2.jpeg" alt="Vanessa Santos treinando agachamento com barra na academia">
           </div>
         </div>
       </div>
@@ -644,7 +643,7 @@
           <span class="step-num">04</span>
           <div>
             <h3>Suporte semanal</h3>
-            <p>Acompanhamento direto via WhatsApp — você pode até mandar vídeo dos exercícios.</p>
+            <p>Acompanhamento direto via WhatsApp, você pode até mandar vídeo dos exercícios.</p>
           </div>
         </div>
         <div class="step">
@@ -669,7 +668,7 @@
         <ul>
           <li>Você tem uma rotina instável ou muito corrida e quer treinar mesmo assim</li>
           <li>Você já treina, mas sente que estagnou e precisa de direcionamento</li>
-          <li>Você busca performance em algo específico — musculação, futevôlei, etc.</li>
+          <li>Você busca performance em algo específico como futebol, futevôlei, etc.</li>
         </ul>
         <ul>
           <li>Você precisa de treinos curtos e realmente eficientes, não intermináveis</li>
@@ -696,15 +695,18 @@
             <div class="tier">
               <div class="tier-row">
                 <span class="tier-name">Mensal</span>
+                <span class="tier-price">R$ 249,90*</span>
               </div>
               <ul>
                 <li>Suporte 1x/semana via WhatsApp</li>
                 <li>Feedback via app de cada treino</li>
               </ul>
+              <p class="plan-footnote">*Valor com assinatura recorrente: R$ 229,90</p>
             </div>
             <div class="tier">
               <div class="tier-row">
                 <span class="tier-name">Trimestral</span>
+                <span class="tier-price">R$ 699,90</span>
               </div>
               <ul>
                 <li>Suporte 1x/semana via WhatsApp</li>
@@ -715,6 +717,7 @@
             <div class="tier">
               <div class="tier-row">
                 <span class="tier-name">Semestral</span>
+                <span class="tier-price">R$ 1.199,90</span>
               </div>
               <ul>
                 <li>Suporte 1x/semana via WhatsApp</li>
